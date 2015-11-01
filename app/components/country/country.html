@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-3 col-sm-2 col-xs-1"></div>
+	<div class="col-md-6 col-sm-8 col-xs-10 text-center">
+
+		<h2>{{ country.countryName }}</h2>
+		<div class="row text-center">
+			<div class="col-xs-6 text-right">Country Population:</div>
+			<div class="col-xs-6 text-left">{{ country.population | number }}</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-6 text-right">Area:</div>
+			<div class="col-xs-6 text-left">{{ country.areaInSqKm | number }} km<sup>2</sup></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-6 text-right">Capital:</div>
+			<div class="col-xs-6 text-left">{{ country.capital }}</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-6 text-right">Capital Population:</div>
+			<div class="col-xs-6 text-left">2342342534534</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-6 text-right">3 Neighbors:</div>
+			<div class="col-xs-6 text-left">2342342534534</div>
+		</div>
+		<div class="row text-center countryImages">
+			<div class="col-xs-6 text-right"><img class="map" src="http://www.geonames.org/img/country/250/{{ country.countryCode | uppercase }}.png" /></div>
+			<div class="col-xs-6 text-left"><img class="flag" src="http://www.geonames.org/flags/x/{{ country.countryCode | lowercase }}.gif" /></div>
+		</div>
+
+		<br/>
+
+		<p>{{ capitalDetails }}</p>
+
+		<button class="btn btn-default" ng-click="tester()">Tester</button>
+
+	</div>
+	<div class="col-md-3 col-sm-2 col-xs-1"></div>
+</div>

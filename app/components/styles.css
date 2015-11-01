@@ -1,0 +1,61 @@
+h1 {
+	font-weight: 500;
+	font-size: 48px;
+	color: rgb(191, 63, 63);
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 36px;
+	}
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background: black;
+}
+ 
+.home-description {
+	margin-bottom: 24px;
+	margin-top: 12px;
+}
+
+.countries-table {
+	margin-top: 12px;
+}
+
+thead {
+	color: white;
+	font-weight: bold;
+	background-color: rgba(63, 93, 191, 0.8);
+
+}
+
+#homeMap {
+	height: 250px;
+}
+
+@media screen and (max-width: 600px) {
+	#homeMap {
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#homeMap {
+		height: 150px;
+	}
+}
+
+.countryImages {
+	margin-top: 20px;
+}
+
+.flag {
+	height: 100px;
+}
+
+.map {
+	height: 120px;
+}

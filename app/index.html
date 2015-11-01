@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ccApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countries & Capitals</title>
+    
+    <!-- build:css ./_assets/combined.css -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./components/styles.css" type="text/css" rel="stylesheet">
+    <!-- endbuild  -->
+
+
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-2 col-xs-1"></div>
+          <div class="col-md-6 col-sm-8 col-xs-10 text-center">
+                      <h1>Countries & Capitals</h1>
+                      <hr>
+          </div>
+          <div class="col-md-3 col-sm-2 col-xs-1"></div>
+      </div>
+    </div>
+
+    <div class="" ng-view></div>
+
+  <!-- build:js ./_assets/combined.js -->
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/angular/angular.min.js"></script>
+  <script src="./bower_components/angular-route/angular-route.min.js"></script>
+  <script src="./bower_components/x2js/xml2json.js"></script>
+  <script src="./bower_components/angular-x2js/src/x2js.js"></script>
+  <script src="./components/cc-app.js"></script>
+  <script src="./components/cc-app-views.js"></script>
+  <script src="./components/cc-library.js"></script>
+  <script src="./components/home/home.js"></script>
+  <script src="./components/countries/countries.js"></script>
+  <script src="./components/country/country.js"></script>
+
+  <!-- endbuild -->
+
+  </body>
+</html>
