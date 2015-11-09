@@ -53,9 +53,23 @@ thead {
 }
 
 .flag {
-	height: 100px;
+	
+	max-width: 160px;
+	max-height: 120px;
 }
 
 .map {
-	height: 120px;
+	
+	max-width: 160px;
+	max-height: 120px;
+}
+
+.countryCard {
+	background-color: rgba(201,201,201,0.5);
+	width: 65%;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	border-color: rgba(201,201,201,0.55);
+	border-width: 22px;
+	border-style: solid;
 }

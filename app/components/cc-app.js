@@ -1,4 +1,4 @@
-angular.module('ccApp', ['ccAppViews', 'ngRoute'])
+angular.module('ccApp', ['ccAppViews', 'ngRoute', 'angular-spinkit'])
 	.config(function($locationProvider, $routeProvider) {
 		$locationProvider.hashPrefix('!');
 		$routeProvider.otherwise({

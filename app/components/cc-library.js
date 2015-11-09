@@ -43,5 +43,25 @@ angular.module('ccLibrary', [])
 			return ccCountryInfo(path);
 		}
 	})
+
+/*
+	.factory('ccFindCapital', function(
+		ccCountryInfo, ccSearch, $interpolate, CC_COUNTRY_PATH, $q) {
+		return function(q, $q, ccCountryInfo) {
+			var path;
+			path = $interpolate(CC_COUNTRY_PATH)({
+					id : q
+				});
+			var countryResult;
+			
+
+			ccCountryInfo(path).success(function(data) {
+				countryResult = $q.defer.resolve(data);
+			});
+			var newPath = countryResult;
+			return ccSearch(newPath);
+		}
+	})
+*/
 		
 	

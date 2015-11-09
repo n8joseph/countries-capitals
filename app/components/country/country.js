@@ -27,17 +27,18 @@ viewsModule.controller('CountryCtrl', function($scope, countryDetails, $route, c
   	$scope.country = currentCountry;
 
   	var currentCountryCapital = currentCountry.capital;
-  	/*
+  	
   	var capitalDetails = ccRequest('search?country=' + currentCountryCode + '&name_equals=' + currentCountryCapital);
   	$scope.capitalDetails = capitalDetails;
 	
-
+/*
 	var capitalDetails;
-	
-  	ccRequest('search?country=' + currentCountryCode + '&name_equals=' + currentCountryCapital).success(function(response) {
+	var capitalRequestPath = 'search?country=' + currentCountryCode + '&name_equals=' + currentCountryCapital;
+
+  	$q.allccRequest(capitalRequestPath).then(function(response) {
   		capitalDetails = response.data;
   	})
-  	*/
+ */
   	$scope.tester = function() {
   		console.log(capitalDetails);
 

@@ -9,6 +9,7 @@
     <!-- build:css ./_assets/combined.css -->
     <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./components/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/angular-spinkit/build/angular-spinkit.min.css">
     <!-- endbuild  -->
 
 
@@ -26,21 +27,22 @@
       </div>
     </div>
 
-    <div class="" ng-view></div>
+    <div ng-view class="container-fluid"></div>
 
   <!-- build:js ./_assets/combined.js -->
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./bower_components/angular/angular.min.js"></script>
   <script src="./bower_components/angular-route/angular-route.min.js"></script>
-  <script src="./bower_components/x2js/xml2json.js"></script>
-  <script src="./bower_components/angular-x2js/src/x2js.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="./bower_components/angular-spinkit/build/angular-spinkit.min.js"></script>
   <script src="./components/cc-app.js"></script>
   <script src="./components/cc-app-views.js"></script>
   <script src="./components/cc-library.js"></script>
   <script src="./components/home/home.js"></script>
   <script src="./components/countries/countries.js"></script>
   <script src="./components/country/country.js"></script>
+
 
   <!-- endbuild -->
 
