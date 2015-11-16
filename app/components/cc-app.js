@@ -1,4 +1,18 @@
-angular.module('ccApp', ['ccAppViews', 'ngRoute', 'angular-spinkit'])
+angular.module('ccApp', ['ccAppViews', 'ngAnimate'])
+
+	.run(["$rootScope", "$location", "$timeout", function($rootScope, $location, $timeout) {
+		$rootScope.$on('$stateChangeStart', function() {
+			console.log('loading');
+			$rootScope.isloading = true;
+		});
+		$rootScope.$on('$stateChangeSuccess', function() {
+			console.log('success');
+			$rootScope.isloading = false;
+		});
+	}]);
+
+/*
+angular.module('ccApp', ['ccAppViews', 'ngRoute', 'ngAnimate', 'angular-spinkit'])
 	.config(function($locationProvider, $routeProvider) {
 		$locationProvider.hashPrefix('!');
 		$routeProvider.otherwise({
@@ -21,3 +35,5 @@ angular.module('ccApp', ['ccAppViews', 'ngRoute', 'angular-spinkit'])
 		    }
 		  }
 	}]);
+
+	*/

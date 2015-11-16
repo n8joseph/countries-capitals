@@ -17,11 +17,11 @@
 			</div>
 			<div class="row text-center">
 				<div class="col-xs-6 text-right">Capital Population:</div>
-				<div class="col-xs-6 text-left">2342342534534</div>
+				<div class="col-xs-6 text-left">{{ capital.population }}</div>
 			</div>
 			<div class="row text-center">
 				<div class="col-xs-6 text-right">3 Neighbors:</div>
-				<div class="col-xs-6 text-left">2342342534534</div>
+				<div class="col-xs-6 text-left"><span ng-repeat="neighbor in neighbors track by $index"><a href="#/countries/{{ neighbor.geonameId }}/capital">{{ neighbor.countryName }}</a> </span></div>
 			</div>
 			<div class="row text-center countryImages">
 				<div class="col-xs-6 text-right"><img class="map" src="http://www.geonames.org/img/country/250/{{ country.countryCode | uppercase }}.png" /></div>
@@ -30,14 +30,12 @@
 			<br/>
 			<div class="row text-center">
 				<div class="col-xs-6 text-right"><a href="#!/"><button class="btn btn-default">Home</button></a></div>
-				<div class="col-xs-6 text-left"><a href="#!/countries"><button class="btn btn-default">Browse Countries</button></a></div>
+				<div class="col-xs-6 text-left"><a href="#/countries"><button class="btn btn-default">Browse Countries</button></a></div>
 			</div>
 		</div>
 
 		<br/>
 		<p>{{ capitalDetails }}</p>
-
-		<button class="btn btn-default" ng-click="tester()">Tester</button>
 
 	</div>
 	<div class="col-md-3 col-sm-2 col-xs-1"></div>

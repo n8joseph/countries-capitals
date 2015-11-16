@@ -12,7 +12,7 @@
 	    		<td>Continent</td>
 	  		</tr>
   		</thead>
-  		<tr ng-repeat="country in allCountries" such-href="/countries/{{country.countryCode}}">
+  		<tr ng-repeat="country in countries" ng-click="goToCountry(country.geonameId)">
 		    <td>{{ country.countryName }}</td>
 		    <td>{{ country.countryCode }}</td> 
 		    <td>{{ country.capital }}</td>
@@ -23,7 +23,7 @@
 	</table>
 	
 	<a href="#!/"><button type="button" class="btn btn-default">Home</button></a>
-	<button class="btn btn-default" ng-click="tester()">Tester</button>
+
 	
 	</div>
 	<div class="col-md-3 col-sm-2 col-xs-1"></div>

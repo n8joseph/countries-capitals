@@ -1,3 +1,5 @@
+/*
+
 viewsModule.config(function($routeProvider) {
 	$routeProvider.when("/countries", {
 		templateUrl : "./components/countries/countries.html",
@@ -19,3 +21,4 @@ viewsModule.controller('CountriesCtrl', ['$scope', 'allCountries', function($sco
 }])
 
 	
+*/

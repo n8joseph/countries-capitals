@@ -1,3 +1,5 @@
+/*
+
 viewsModule.config(function($routeProvider) {
 	$routeProvider.when("/countries/:country", {
 		templateUrl : "./components/country/country.html",
@@ -27,10 +29,13 @@ viewsModule.controller('CountryCtrl', function($scope, countryDetails, $route, c
   	$scope.country = currentCountry;
 
   	var currentCountryCapital = currentCountry.capital;
-  	
+ */
+ /* 	
   	var capitalDetails = ccRequest('search?country=' + currentCountryCode + '&name_equals=' + currentCountryCapital);
   	$scope.capitalDetails = capitalDetails;
-	
+ */
+
+
 /*
 	var capitalDetails;
 	var capitalRequestPath = 'search?country=' + currentCountryCode + '&name_equals=' + currentCountryCapital;
@@ -39,8 +44,11 @@ viewsModule.controller('CountryCtrl', function($scope, countryDetails, $route, c
   		capitalDetails = response.data;
   	})
  */
+ /*
   	$scope.tester = function() {
   		console.log(capitalDetails);
 
   	}
 })
+
+*/
